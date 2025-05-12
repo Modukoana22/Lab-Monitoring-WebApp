@@ -36,4 +36,6 @@ public interface StaffFacadeLocal {
 
     List<Staff> openLabs();
     
+    boolean isLabOccupied(String labName);
+    
 }

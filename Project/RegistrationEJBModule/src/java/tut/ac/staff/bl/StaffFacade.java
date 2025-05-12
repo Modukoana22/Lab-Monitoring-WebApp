@@ -61,6 +61,15 @@ public class StaffFacade extends AbstractFacade<Staff> implements StaffFacadeLoc
     return stafflabs;
 }
 
+    @Override
+   public boolean isLabOccupied(String labName) {
+    return em.createQuery(
+        "SELECT COUNT(s) FROM Staff s WHERE " +
+        "s.labName = :labName AND s.signOutDate IS NULL", Long.class)
+        .setParameter("labName", labName)
+        .getSingleResult() > 0;
+}
+
     
     
     
