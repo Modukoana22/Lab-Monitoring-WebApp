@@ -13,4 +13,12 @@
     <exception-type>tut.ac.za.LabOccupiedException</exception-type>
     <location>/lab_error.jsp</location>
 </error-page>
+<error-page>
+    <exception-type>javax.ejb.EJBException</exception-type>
+    <location>/invalid_staff_no.jsp</location>
+</error-page>
+<error-page>
+    <exception-type>tut.ac.za.InvalidCredentialsException</exception-type>
+    <location>/invalid_credentials.jsp</location>
+</error-page>
 </web-app>

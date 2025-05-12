@@ -17,7 +17,7 @@
 
     <div class="form-container">
         <form action="SignOutServlet" method="POST">
-            <label>Staff Number:</label>
+            <label>Key:</label>
             <input type="text" name="staffno" required>
             <input type="submit" value="Sign Out">
         </form>
